@@ -1,0 +1,128 @@
+* Program for multiplication of A stored in row major order and B in row major order - Reported Data
+* Name: KR Hariharan
+* Roll No: CS19B079
+* Date: Mar 18, 2021
+
+seconds : 1616080218
+micro seconds : 280852
+seconds : 1616080221
+micro seconds : 692929
+seconds : 1616080221
+micro seconds : 694580
+seconds : 1616080224
+micro seconds : 641889
+seconds : 1616080224
+micro seconds : 643745
+seconds : 1616080227
+micro seconds : 321839
+seconds : 1616080227
+micro seconds : 323776
+seconds : 1616080230
+micro seconds : 409087
+seconds : 1616080230
+micro seconds : 415850
+seconds : 1616080233
+micro seconds : 254212
+seconds : 1616080233
+micro seconds : 256000
+seconds : 1616080235
+micro seconds : 829894
+seconds : 1616080235
+micro seconds : 831647
+seconds : 1616080238
+micro seconds : 722306
+seconds : 1616080238
+micro seconds : 724083
+seconds : 1616080241
+micro seconds : 827853
+seconds : 1616080241
+micro seconds : 830268
+seconds : 1616080244
+micro seconds : 905648
+seconds : 1616080263
+micro seconds : 442366
+seconds : 1616080266
+micro seconds : 838199
+seconds : 1616080266
+micro seconds : 839868
+seconds : 1616080269
+micro seconds : 897440
+seconds : 1616080269
+micro seconds : 899154
+seconds : 1616080272
+micro seconds : 933742
+seconds : 1616080272
+micro seconds : 935581
+seconds : 1616080275
+micro seconds : 896589
+seconds : 1616080275
+micro seconds : 898742
+seconds : 1616080279
+micro seconds : 269343
+seconds : 1616080279
+micro seconds : 301210
+seconds : 1616080282
+micro seconds : 141138
+seconds : 1616080282
+micro seconds : 142605
+seconds : 1616080284
+micro seconds : 843263
+seconds : 1616080284
+micro seconds : 844971
+seconds : 1616080287
+micro seconds : 829040
+seconds : 1616080287
+micro seconds : 830519
+seconds : 1616080290
+micro seconds : 613121
+seconds : 1616080290
+micro seconds : 614635
+seconds : 1616080293
+micro seconds : 615229
+
+ Performance counter stats for './a.out' (10 runs):
+
+    3,01,69,74,853 ns   duration_time                                                 ( +-  2.43% )
+   12,86,96,96,652      cycles                                                        ( +-  2.37% )  (55.45%)
+    9,53,66,92,338      instructions              #    0.74  insn per cycle           ( +-  0.11% )  (55.52%)
+      31,16,68,691      branch-instructions                                           ( +-  1.42% )  (55.57%)
+      37,55,05,247      cache-references                                              ( +-  2.05% )  (55.62%)
+      26,88,54,345      cache-misses              #   71.598 % of all cache refs      ( +-  0.37% )  (55.65%)
+      64,40,28,793      L1-dcache-loads                                               ( +-  0.51% )  (55.65%)
+      27,14,68,752      L1-dcache-load-misses     #   42.15% of all L1-dcache hits    ( +-  0.03% )  (55.58%)
+      27,11,56,332      dTLB-loads                                                    ( +-  0.05% )  (55.52%)
+         15,25,062      dTLB-load-misses          #    0.56% of all dTLB cache hits   ( +- 10.91% )  (55.45%)
+   <not supported>      LLC-loads                                                   
+   <not supported>      LLC-load-misses                                             
+
+            3.0170 +- 0.0733 seconds time elapsed  ( +-  2.43% )
+
+
+
+==65587== Cachegrind, a cache and branch-prediction profiler
+==65587== Copyright (C) 2002-2017, and GNU GPL'd, by Nicholas Nethercote et al.
+==65587== Using Valgrind-3.16.1 and LibVEX; rerun with -h for copyright info
+==65587== Command: ./a.out
+==65587== 
+--65587-- warning: L3 cache found, using its data for the LL simulation.
+seconds : 1616086489
+micro seconds : 416942
+seconds : 1616086512
+micro seconds : 777822
+==65587== 
+==65587== I   refs:      9,554,590,667
+==65587== I1  misses:            1,113
+==65587== LLi misses:            1,100
+==65587== I1  miss rate:          0.00%
+==65587== LLi miss rate:          0.00%
+==65587== 
+==65587== D   refs:        594,082,047  (576,767,485 rd   + 17,314,562 wr)
+==65587== D1  misses:      269,094,134  (268,829,254 rd   +    264,880 wr)
+==65587== LLd misses:          397,994  (    134,207 rd   +    263,787 wr)
+==65587== D1  miss rate:          45.3% (       46.6%     +        1.5%  )
+==65587== LLd miss rate:           0.1% (        0.0%     +        1.5%  )
+==65587== 
+==65587== LL refs:         269,095,247  (268,830,367 rd   +    264,880 wr)
+==65587== LL misses:           399,094  (    135,307 rd   +    263,787 wr)
+==65587== LL miss rate:            0.0% (        0.0%     +        1.5%  )
+

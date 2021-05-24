@@ -1,0 +1,91 @@
+* Program for multiplication of A stored in row major order and B in column major order - Reported Data
+* Name: KR Hariharan
+* Roll No: CS19B079
+* Date: Mar 18, 2021
+
+seconds : 1616080067
+micro seconds : 145296
+seconds : 1616080067
+micro seconds : 708576
+seconds : 1616080067
+micro seconds : 710632
+seconds : 1616080068
+micro seconds : 277585
+seconds : 1616080068
+micro seconds : 279417
+seconds : 1616080068
+micro seconds : 841325
+seconds : 1616080068
+micro seconds : 843008
+seconds : 1616080069
+micro seconds : 410771
+seconds : 1616080069
+micro seconds : 412618
+seconds : 1616080069
+micro seconds : 983279
+seconds : 1616080069
+micro seconds : 985119
+seconds : 1616080070
+micro seconds : 551398
+seconds : 1616080070
+micro seconds : 553241
+seconds : 1616080071
+micro seconds : 117968
+seconds : 1616080071
+micro seconds : 119761
+seconds : 1616080071
+micro seconds : 682588
+seconds : 1616080071
+micro seconds : 684389
+seconds : 1616080072
+micro seconds : 252937
+seconds : 1616080072
+micro seconds : 254627
+seconds : 1616080072
+micro seconds : 807607
+
+ Performance counter stats for './a.out' (10 runs):
+
+      56,59,77,319 ns   duration_time                                                 ( +-  0.28% )
+    2,41,42,79,152      cycles                                                        ( +-  0.28% )  (54.80%)
+    9,05,20,57,137      instructions              #    3.75  insn per cycle           ( +-  0.05% )  (54.87%)
+      31,23,79,939      branch-instructions                                           ( +-  1.24% )  (55.09%)
+      13,65,33,346      cache-references                                              ( +-  0.07% )  (55.56%)
+         23,23,578      cache-misses              #    1.702 % of all cache refs      ( +-  0.46% )  (56.20%)
+      62,96,84,120      L1-dcache-loads                                               ( +-  0.39% )  (56.45%)
+       6,93,86,531      L1-dcache-load-misses     #   11.02% of all L1-dcache hits    ( +-  0.14% )  (56.22%)
+         11,84,813      dTLB-loads                                                    ( +-  0.09% )  (55.76%)
+            28,930      dTLB-load-misses          #    2.44% of all dTLB cache hits   ( +-  4.33% )  (55.06%)
+   <not supported>      LLC-loads                                                   
+   <not supported>      LLC-load-misses                                             
+
+           0.56598 +- 0.00157 seconds time elapsed  ( +-  0.28% )
+           
+           
+==65763== Cachegrind, a cache and branch-prediction profiler
+==65763== Copyright (C) 2002-2017, and GNU GPL'd, by Nicholas Nethercote et al.
+==65763== Using Valgrind-3.16.1 and LibVEX; rerun with -h for copyright info
+==65763== Command: ./a.out
+==65763== 
+--65763-- warning: L3 cache found, using its data for the LL simulation.
+seconds : 1616086650
+micro seconds : 612498
+seconds : 1616086671
+micro seconds : 672021
+==65763== 
+==65763== I   refs:      9,026,105,288
+==65763== I1  misses:            1,113
+==65763== LLi misses:            1,100
+==65763== I1  miss rate:          0.00%
+==65763== LLi miss rate:          0.00%
+==65763== 
+==65763== D   refs:        594,606,331  (576,767,483 rd   + 17,838,848 wr)
+==65763== D1  misses:       67,439,862  ( 67,177,029 rd   +    262,833 wr)
+==65763== LLd misses:          395,944  (    133,181 rd   +    262,763 wr)
+==65763== D1  miss rate:          11.3% (       11.6%     +        1.5%  )
+==65763== LLd miss rate:           0.1% (        0.0%     +        1.5%  )
+==65763== 
+==65763== LL refs:          67,440,975  ( 67,178,142 rd   +    262,833 wr)
+==65763== LL misses:           397,044  (    134,281 rd   +    262,763 wr)
+==65763== LL miss rate:            0.0% (        0.0%     +        1.5%  )
+
